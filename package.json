@@ -1,0 +1,30 @@
+{
+    "name": "canvas-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc && copyfiles -u 1 src/*.{css,html} dist",
+        "start": "npx serve dist",
+        "test": "mocha test/**/*.test.ts",
+        "lint": "eslint --config .eslintrc.js src/**/*.{js,ts} --fix",
+        "prettier": "prettier --config .prettierrc.js --write ./**/*.{css,js,jsx,json,md,ts,tsx}"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/chai": "^4.2.12",
+        "@types/mocha": "^8.0.3",
+        "@typescript-eslint/eslint-plugin": "^4.1.0",
+        "@typescript-eslint/parser": "^4.1.0",
+        "chai": "^4.2.0",
+        "eslint": "^7.8.1",
+        "husky": "^4.3.0",
+        "mocha": "^8.1.3",
+        "prettier": "^2.1.1",
+        "pretty-quick": "^3.0.2",
+        "ts-node": "^9.0.0",
+        "typescript": "^4.0.2"
+    }
+}
